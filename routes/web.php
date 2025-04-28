@@ -12,6 +12,7 @@ Route::get('/', function () {
 
 Route::get('/weather', [WeatherController::class, 'getWeather']);
 
+Route::get('/weather-gps', [WeatherController::class, 'getWeatherByCoordinates']);
 
 Route::get('/testenv', function () {
     dd([
